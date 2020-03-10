@@ -21,7 +21,7 @@ import paises.componente.ra6.SqlDbDAOFactory;
 
 /**
  *
- * @author yuter
+ * @author angel
  */
 public class SqlDbMunicipioImpl implements MunicipioDAO {
 

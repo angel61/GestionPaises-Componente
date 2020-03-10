@@ -10,10 +10,8 @@ import dao.*;
 import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
 
-/**
- *
- * @author mjesus
- */
+
+
 public class NeodatisDAOFactory extends DAOFactory {
 
     static ODB odb = null;

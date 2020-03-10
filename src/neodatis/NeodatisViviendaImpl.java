@@ -18,7 +18,7 @@ import paises.componente.ra6.NeodatisDAOFactory;
 
 /**
  *
- * @author yuter
+ * @author angel
  */
 public class NeodatisViviendaImpl implements ViviendaDAO {
 
