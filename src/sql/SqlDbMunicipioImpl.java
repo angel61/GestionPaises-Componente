@@ -49,7 +49,7 @@ public class SqlDbMunicipioImpl implements MunicipioDAO {
         }
 
         try {
-            if (ConsultarMunicipio(muni.getNombre()) == null && rsAux.next()) {
+            if (ConsultarMunicipio(nombre) == null && rsAux.next()) {
                 String sql = "INSERT INTO municipio VALUES(?, ?, ?, ?, ?)";
                 PreparedStatement sentencia;
                 try {

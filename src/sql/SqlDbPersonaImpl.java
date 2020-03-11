@@ -45,7 +45,7 @@ public class SqlDbPersonaImpl implements PersonaDAO {
         }
 
             try {
-        if (ConsultarPersona(persona.getNombre()) == null && rsAux.next()) {
+        if (ConsultarPersona(nombre) == null && rsAux.next()) {
             String sql = "INSERT INTO persona VALUES(?, ?, ?)";
             PreparedStatement sentencia;
                 sentencia = conexion.prepareStatement(sql);

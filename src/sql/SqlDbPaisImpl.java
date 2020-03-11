@@ -30,7 +30,7 @@ public class SqlDbPaisImpl implements PaisDAO {
     public int InsertarPais(Pais pais) {
         int valor = 1;
         
-        if(ConsultarPais(pais.getCodigo())==null&&ConsultarPais(pais.getNombrepais())==null){
+        if(ConsultarPais(pais.getCodigo())==null&&ConsultarPais(pais.getNombrepais().toUpperCase())==null){
         String sql = "INSERT INTO pais VALUES(?, ?)";
         PreparedStatement sentencia;
         try {
@@ -90,7 +90,7 @@ public class SqlDbPaisImpl implements PaisDAO {
     @Override
     public int ModificarPais(int codigo, String nuevonombre) {
         int valor = 1;
-        if(ConsultarPais(nuevonombre)==null){
+        if(ConsultarPais(nuevonombre.toUpperCase())==null){
         String sql = "UPDATE pais SET nombrepais = ? WHERE codigo = ? ";
         PreparedStatement sentencia;
         try {
